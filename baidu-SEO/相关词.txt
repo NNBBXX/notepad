@@ -1,0 +1,11 @@
+http://www.baidu.com/baidu?word=关键词&se=浏览器标示_8_dg&ie=编码
+
+http://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&tn=baidu&wd=本次搜索词rsv_enter=1&rsv_sug3=1&rsv_sug4=24&rsv_sug1=2&oq=上一次搜索词&rsv_sug2=0&rsp=0&inputT=313&rsv_sug=2&bs=上一次搜索词&__eis=1&__eist=287390
+
+http://www.baidu.com/baidu?wd=搜索词&tn=monline_4_dg
+
+http://www.baidu.com/s?tn=monline_4_dg&ie=utf-8&f=8&rsv_bp=1&wd=本次搜索词&rsv_enter=1&rsv_sug3=3&rsv_sug4=453&rsv_sug1=1&rsv_sug2=0&inputT=849&rsv_sug=2
+
+http://www.baidu.com/s?wd=搜索词&rsv_spt=1&issp=1&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_sug3=5&rsv_sug4=254&rsv_sug1=3&rsv_sug2=0&inputT=2190&rsv_sug=1
+
+http://www.baidu.com/s?wd=本次搜索词&ie=utf-8&tn=baiduhome_pg&f=3&rsv_bp=1&rsv_enter=1&rsv_sug3=1&rsv_sug4=49&rsv_sug1=1&oq=上一次搜索词&rsv_sug2=0&rsp=1&inputT=334&rsv_sug=2&rsv_spt=1

